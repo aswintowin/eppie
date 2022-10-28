@@ -13,7 +13,7 @@ class TodoStore {
     makeAutoObservable(this)
     reaction(
       () => this.todos,
-      (_) => console.log(this.todos.length),
+      () => console.log(this.todos.length),
     )
   }
 
